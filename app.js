@@ -1,12 +1,12 @@
-const vueTest = new Vue ({
+/*const vueTest = new Vue ({
     el: '#vueTester',
     data: {
         title: "I hope this works"
     }
-})
+})*/
 
 new Vue({
-    el: '#randomMeal',
+    el: '#randomMeal', 
     data () {
       return {
         info: null
@@ -15,6 +15,11 @@ new Vue({
     mounted () {
       axios
         .get('https://www.themealdb.com/api/json/v1/1/random.php')
-        .then(response => (this.info = response))
+        .then(response => (this.info = response.data.meals[0].strMeal))      
     }
+    
   })
+
+  
+
+  
