@@ -6,11 +6,15 @@
     <title>Document</title>
 </head>
 <body>
+
 <h1>100 Recipes</h1>
+
+  <!--  example vue element. remove later -->
   <div id="vueTester">
       <h2>{{title}}</h2>
   </div> 
 
+  <!-- display title, photo, ingredients, and instructions from the random recipe from api. v-bind allows for vue as img src -->
   <div id="randomMeal">
     <h2>{{ info.strMeal }}</h2>
     <img v-bind:src="info.strMealThumb" alt="">

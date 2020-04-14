@@ -1,10 +1,11 @@
-/*const vueTest = new Vue ({
+const vueTest = new Vue ({
     el: '#vueTester',
     data: {
         title: "I hope this works"
     }
-})*/
+})
 
+/*Pull a random recipe from TheMealDB api*/
 new Vue({
     el: '#randomMeal', 
     data () {
