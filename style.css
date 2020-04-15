@@ -3,3 +3,30 @@ body {
     background-color: black;
     color: whitesmoke;
 }
+
+.main-header {
+    background-image: linear-gradient(darkgreen, black);
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: gold;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    text-decoration: none;
+}
+
+a {
+    color: gold;
+}
+
+th {
+    color: gold;
+}
