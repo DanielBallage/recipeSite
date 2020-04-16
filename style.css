@@ -4,29 +4,55 @@ body {
     color: whitesmoke;
 }
 
+.wrapper {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 .main-header {
     background-image: linear-gradient(darkgreen, black);
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 h1 {
     color: gold;
 }
 
+h2 {
+    color: gold;
+}
+
 .main-nav {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-li {
-    text-decoration: none;
-}
 
 a {
+    color: whitesmoke;
+    text-decoration: none;
+    /*background-image: linear-gradient(red, darkred);*/
+    border-style: solid;
+    border-color: whitesmoke;
+    width: 50%;
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+th {
     color: gold;
 }
 
-th {
-    color: gold;
+img {
+    max-width: 90%;
 }
