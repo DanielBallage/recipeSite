@@ -1,10 +1,9 @@
 # recipeSite
 
 # Overview
-This will be a responsive website using HTML, CSS, JS, Vue, and a recipe API. The site will have 3 mainHTML pages
+This will be a responsive website using HTML, CSS, JS, Vue, and a recipe API. The site will have 2 mainHTML pages
  page 1: the Homepage will explain the site and pull a random "featured" recipe from the API each time refreshed
- page 2: the Search page will feature an input and button searchbar where the user can search for recipes by name. info pulled fromthe  API. results will be displayed in the body
- page 3: page 3 will list all recipes pulled from the API in alphabetical order
+ page 2: page 2 will list all recipes pulled from the API in alphabetical order. Each letter of the alphabet will be a button that when pushed, reveals the recipes of said letter
  
 # Technical Summary
  
