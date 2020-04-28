@@ -24,11 +24,24 @@
 
 <div class="wrapper">
 
-
-<div id="mealsA">
-    <button>{{info.meals[0].strMeal}}</button>
-    <button>{{info.meals[1].strMeal}}</button>
+<button class="collapsible" type="button">button</button>
+<div>
+<p>content</p>
+<p>content</p>
 </div>
+
+<button class="collapsible" type="button">button</button>
+<div>
+<p>content</p>
+<p>content</p>
+</div>
+
+<!--<div id="mealsA">-->
+    <button class="collapsible" type="button">A</button>
+    <div id="mealsA">
+    <p>{{info.meals[0].strMeal}}</p>    
+    <p>{{info.meals[1].strMeal}}</p>  
+    </div>
 <div id="mealsB">
     {{info.meals[0].strMeal}}
     {{info.meals[1].strMeal}}
