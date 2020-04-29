@@ -36,12 +36,20 @@
 <p>content</p>
 </div>
 
-<!--<div id="mealsA">-->
+
     <button class="collapsible" type="button">A</button>
     <div id="mealsA">
-    <p>{{info.meals[0].strMeal}}</p>    
-    <p>{{info.meals[1].strMeal}}</p>  
+
+        <h2>{{ info.meals[0].strMeal }}</h2>
+        <img v-bind:src="info.meals[0].strMealThumb" alt="">
+        <table><tr><th>Ingredient</th><th>Measurement</th></tr><tr><td>{{ info.meals[0].strIngredient1 }}</td><td>{{ info.meals[0].strMeasure1 }}</td></tr><tr><td>{{ info.meals[0].strIngredient2 }}</td><td>{{ info.meals[0].strMeasure2 }}</td></tr><tr><td>{{ info.meals[0].strIngredient3 }}</td><td>{{ info.meals[0].strMeasure3 }}</td></tr><tr><td>{{ info.meals[0].strIngredient4 }}</td><td>{{ info.meals[0].strMeasure4 }}</td></tr><tr><td>{{ info.meals[0].strIngredient5 }}</td><td>{{ info.meals[0].strMeasure5 }}</td></tr><tr><td>{{ info.meals[0].strIngredient6 }}</td><td>{{ info.meals[0].strMeasure6 }}</td></tr><tr><td>{{ info.meals[0].strIngredient7 }}</td><td>{{ info.meals[0].strMeasure7 }}</td></tr><tr><td>{{ info.meals[0].strIngredient8 }}</td><td>{{ info.meals[0].strMeasure8 }}</td></tr><tr><td>{{ info.meals[0].strIngredient9 }}</td><td>{{ info.meals[0].strMeasure9 }}</td></tr><tr><td>{{ info.meals[0].strIngredient10 }}</td><td>{{ info.meals[0].strMeasure10 }}</td></tr><tr><td>{{ info.meals[0].strIngredient11 }}</td><td>{{ info.meals[0].strMeasure11 }}</td></tr><tr><td>{{ info.meals[0].strIngredient12 }}</td><td>{{ info.meals[0].strMeasure12 }}</td></tr><tr><td>{{ info.meals[0].strIngredient13 }}</td><td>{{ info.meals[0].strMeasure13 }}</td></tr><tr><td>{{ info.meals[0].strIngredient14 }}</td><td>{{ info.meals[0].strMeasure14 }}</td></tr><tr><td>{{ info.meals[0].strIngredient15 }}</td><td>{{ info.meals[0].strMeasure15 }}</td></tr><tr><td>{{ info.meals[0].strIngredient16 }}</td><td>{{ info.meals[0].strMeasure16 }}</td></tr><tr><td>{{ info.meals[0].strIngredient17 }}</td><td>{{ info.meals[0].strMeasure17 }}</td></tr><tr><td>{{ info.meals[0].strIngredient18 }}</td><td>{{ info.meals[0].strMeasure18 }}</td></tr><tr><td>{{ info.meals[0].strIngredient19 }}</td><td>{{ info.meals[0].strMeasure19 }}</td></tr><tr><td>{{ info.meals[0].strIngredient20 }}</td><td>{{ info.meals[0].strMeasure20 }}</td></tr></table>
+        <p class="instructions">{{info.meals[0].strInstructions}}</p>  
+
+        <h2>{{ info.meals[1].strMeal }}</h2>
+        <img v-bind:src="info.meals[1].strMealThumb" alt="">
     </div>
+
+<button class="collapsible" type="button">B</button>
 <div id="mealsB">
     {{info.meals[0].strMeal}}
     {{info.meals[1].strMeal}}

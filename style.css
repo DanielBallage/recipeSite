@@ -89,3 +89,7 @@ footer {
     margin: 1em;
    
 }
+
+#mealsA, #mealsB {
+    display: none;
+}
