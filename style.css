@@ -90,6 +90,12 @@ footer {
    
 }
 
-#mealsA, #mealsB {
+#mealsA, #mealsB, #mealsC, #mealsD,
+#mealsE, #mealsF, #mealsG, #mealsH,
+#mealsI, #mealsJ, #mealsK, #mealsL,
+#mealsM, #mealsN, #mealsO, #mealsP,
+#mealsQ, #mealsR, #mealsS, #mealsT,
+#mealsU, #mealsV, #mealsW, #mealsX,
+#mealsY, #mealsZ {
     display: none;
 }
