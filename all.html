@@ -10,20 +10,23 @@
 </head>
 <body>
 
-<div class="main-header">
+<!-- The title and main navigation -->
 <header class="main-header">
-    <h1>100 Recipes</h1>
+    <h1 class="site-title">recipes4U</h1>
     <div class="main-nav">
         <a href="index.html" class="nav-item">Home</a>
-        <a href="search.html" class="nav-item">Search Recipes</a>
         <a href="all.html" class="nav-item">All Recipes</a>
     </div>
 </header>
 
-</div>
+<!-- description -->
+<p class="description">
+    Click on a letter to see the recipes. Click on it again to hide them.
+</p>
 
 <div class="wrapper">
 
+    <!-- A list of the recipes in alphabetical order with dropdown buttons -->
     <button class="collapsible" type="button">A</button>
     <div id="mealsA">
 
@@ -327,8 +330,10 @@
 
 </div>
 
+<!-- footer -->
 <footer>Created by Daniel Ballage</footer>
 
+<!-- js links -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="app.js"></script>
