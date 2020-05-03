@@ -24,19 +24,6 @@
 
 <div class="wrapper">
 
-<button class="collapsible" type="button">button</button>
-<div>
-<p>content</p>
-<p>content</p>
-</div>
-
-<button class="collapsible" type="button">button</button>
-<div>
-<p>content</p>
-<p>content</p>
-</div>
-
-
     <button class="collapsible" type="button">A</button>
     <div id="mealsA">
 
@@ -149,7 +136,7 @@
     <div id="mealsI">
 
         <h2>There are no meals that start with "I"</h2>
-        <img src="shrug.png" alt="">
+        <img src="shrug.png" alt="" class="shrug">
     </div>
     <button class="collapsible" type="button">J</button>
     <div id="mealsJ">
@@ -190,50 +177,153 @@
         <table><tr><th>Ingredient</th><th>Measurement</th></tr><tr><td>{{ info.meals[1].strIngredient1 }}</td><td>{{ info.meals[1].strMeasure1 }}</td></tr><tr><td>{{ info.meals[1].strIngredient2 }}</td><td>{{ info.meals[1].strMeasure2 }}</td></tr><tr><td>{{ info.meals[1].strIngredient3 }}</td><td>{{ info.meals[1].strMeasure3 }}</td></tr><tr><td>{{ info.meals[1].strIngredient4 }}</td><td>{{ info.meals[1].strMeasure4 }}</td></tr><tr><td>{{ info.meals[1].strIngredient5 }}</td><td>{{ info.meals[1].strMeasure5 }}</td></tr><tr><td>{{ info.meals[1].strIngredient6 }}</td><td>{{ info.meals[1].strMeasure6 }}</td></tr><tr><td>{{ info.meals[1].strIngredient7 }}</td><td>{{ info.meals[1].strMeasure7 }}</td></tr><tr><td>{{ info.meals[1].strIngredient8 }}</td><td>{{ info.meals[1].strMeasure8 }}</td></tr><tr><td>{{ info.meals[1].strIngredient9 }}</td><td>{{ info.meals[1].strMeasure9 }}</td></tr><tr><td>{{ info.meals[1].strIngredient10 }}</td><td>{{ info.meals[1].strMeasure10 }}</td></tr><tr><td>{{ info.meals[1].strIngredient11 }}</td><td>{{ info.meals[1].strMeasure11 }}</td></tr><tr><td>{{ info.meals[1].strIngredient12 }}</td><td>{{ info.meals[1].strMeasure12 }}</td></tr><tr><td>{{ info.meals[1].strIngredient13 }}</td><td>{{ info.meals[1].strMeasure13 }}</td></tr><tr><td>{{ info.meals[1].strIngredient14 }}</td><td>{{ info.meals[1].strMeasure14 }}</td></tr><tr><td>{{ info.meals[1].strIngredient15 }}</td><td>{{ info.meals[1].strMeasure15 }}</td></tr><tr><td>{{ info.meals[1].strIngredient16 }}</td><td>{{ info.meals[1].strMeasure16 }}</td></tr><tr><td>{{ info.meals[1].strIngredient17 }}</td><td>{{ info.meals[1].strMeasure17 }}</td></tr><tr><td>{{ info.meals[1].strIngredient18 }}</td><td>{{ info.meals[1].strMeasure18 }}</td></tr><tr><td>{{ info.meals[1].strIngredient19 }}</td><td>{{ info.meals[0].strMeasure19 }}</td></tr><tr><td>{{ info.meals[1].strIngredient20 }}</td><td>{{ info.meals[1].strMeasure20 }}</td></tr></table>
         <p class="instructions">{{info.meals[1].strInstructions}}</p>
     </div>
-<div id="mealsM">
-    {{info.meals[0].strMeal}}
-    {{info.meals[1].strMeal}}
-</div>
-<div id="mealsN">
-    {{info.meals[0].strMeal}}
-    {{info.meals[1].strMeal}}
-</div>
-<div id="mealsO">
-    {{info.meals[0].strMeal}}
-    {{info.meals[1].strMeal}}
-</div>
-<div id="mealsP">
-    {{info.meals[0].strMeal}}
-    {{info.meals[1].strMeal}}
-</div>
-<div id="mealsQ">
-    {{info.meals[0].strMeal}}
-    {{info.meals[1].strMeal}}
-</div>
-<div id="mealsR">
-    {{info.meals[0].strMeal}}
-    {{info.meals[1].strMeal}}
-</div>
-<div id="mealsS">
-    {{info.meals[0].strMeal}}
-    {{info.meals[1].strMeal}}
-</div>
-<div id="mealsT">
-    {{info.meals[0].strMeal}}
-    {{info.meals[1].strMeal}}
-</div>
-<div id="mealsU">
-    {{info.meals[0].strMeal}}
-    {{info.meals[1].strMeal}}
-</div>
-<div id="mealsV">
-    {{info.meals[0].strMeal}}
-    {{info.meals[1].strMeal}}
-</div>
-<div id="mealsW">
-    {{info.meals[0].strMeal}}
-    {{info.meals[1].strMeal}}
-</div>
+    <button class="collapsible" type="button">M</button>
+    <div id="mealsM">
+
+        <h2>{{ info.meals[0].strMeal }}</h2>
+        <img v-bind:src="info.meals[0].strMealThumb" alt="">
+        <table><tr><th>Ingredient</th><th>Measurement</th></tr><tr><td>{{ info.meals[0].strIngredient1 }}</td><td>{{ info.meals[0].strMeasure1 }}</td></tr><tr><td>{{ info.meals[0].strIngredient2 }}</td><td>{{ info.meals[0].strMeasure2 }}</td></tr><tr><td>{{ info.meals[0].strIngredient3 }}</td><td>{{ info.meals[0].strMeasure3 }}</td></tr><tr><td>{{ info.meals[0].strIngredient4 }}</td><td>{{ info.meals[0].strMeasure4 }}</td></tr><tr><td>{{ info.meals[0].strIngredient5 }}</td><td>{{ info.meals[0].strMeasure5 }}</td></tr><tr><td>{{ info.meals[0].strIngredient6 }}</td><td>{{ info.meals[0].strMeasure6 }}</td></tr><tr><td>{{ info.meals[0].strIngredient7 }}</td><td>{{ info.meals[0].strMeasure7 }}</td></tr><tr><td>{{ info.meals[0].strIngredient8 }}</td><td>{{ info.meals[0].strMeasure8 }}</td></tr><tr><td>{{ info.meals[0].strIngredient9 }}</td><td>{{ info.meals[0].strMeasure9 }}</td></tr><tr><td>{{ info.meals[0].strIngredient10 }}</td><td>{{ info.meals[0].strMeasure10 }}</td></tr><tr><td>{{ info.meals[0].strIngredient11 }}</td><td>{{ info.meals[0].strMeasure11 }}</td></tr><tr><td>{{ info.meals[0].strIngredient12 }}</td><td>{{ info.meals[0].strMeasure12 }}</td></tr><tr><td>{{ info.meals[0].strIngredient13 }}</td><td>{{ info.meals[0].strMeasure13 }}</td></tr><tr><td>{{ info.meals[0].strIngredient14 }}</td><td>{{ info.meals[0].strMeasure14 }}</td></tr><tr><td>{{ info.meals[0].strIngredient15 }}</td><td>{{ info.meals[0].strMeasure15 }}</td></tr><tr><td>{{ info.meals[0].strIngredient16 }}</td><td>{{ info.meals[0].strMeasure16 }}</td></tr><tr><td>{{ info.meals[0].strIngredient17 }}</td><td>{{ info.meals[0].strMeasure17 }}</td></tr><tr><td>{{ info.meals[0].strIngredient18 }}</td><td>{{ info.meals[0].strMeasure18 }}</td></tr><tr><td>{{ info.meals[0].strIngredient19 }}</td><td>{{ info.meals[0].strMeasure19 }}</td></tr><tr><td>{{ info.meals[0].strIngredient20 }}</td><td>{{ info.meals[0].strMeasure20 }}</td></tr></table>
+        <p class="instructions">{{info.meals[0].strInstructions}}</p>  
+
+        <h2>{{ info.meals[1].strMeal }}</h2>
+        <img v-bind:src="info.meals[1].strMealThumb" alt="">
+        <table><tr><th>Ingredient</th><th>Measurement</th></tr><tr><td>{{ info.meals[1].strIngredient1 }}</td><td>{{ info.meals[1].strMeasure1 }}</td></tr><tr><td>{{ info.meals[1].strIngredient2 }}</td><td>{{ info.meals[1].strMeasure2 }}</td></tr><tr><td>{{ info.meals[1].strIngredient3 }}</td><td>{{ info.meals[1].strMeasure3 }}</td></tr><tr><td>{{ info.meals[1].strIngredient4 }}</td><td>{{ info.meals[1].strMeasure4 }}</td></tr><tr><td>{{ info.meals[1].strIngredient5 }}</td><td>{{ info.meals[1].strMeasure5 }}</td></tr><tr><td>{{ info.meals[1].strIngredient6 }}</td><td>{{ info.meals[1].strMeasure6 }}</td></tr><tr><td>{{ info.meals[1].strIngredient7 }}</td><td>{{ info.meals[1].strMeasure7 }}</td></tr><tr><td>{{ info.meals[1].strIngredient8 }}</td><td>{{ info.meals[1].strMeasure8 }}</td></tr><tr><td>{{ info.meals[1].strIngredient9 }}</td><td>{{ info.meals[1].strMeasure9 }}</td></tr><tr><td>{{ info.meals[1].strIngredient10 }}</td><td>{{ info.meals[1].strMeasure10 }}</td></tr><tr><td>{{ info.meals[1].strIngredient11 }}</td><td>{{ info.meals[1].strMeasure11 }}</td></tr><tr><td>{{ info.meals[1].strIngredient12 }}</td><td>{{ info.meals[1].strMeasure12 }}</td></tr><tr><td>{{ info.meals[1].strIngredient13 }}</td><td>{{ info.meals[1].strMeasure13 }}</td></tr><tr><td>{{ info.meals[1].strIngredient14 }}</td><td>{{ info.meals[1].strMeasure14 }}</td></tr><tr><td>{{ info.meals[1].strIngredient15 }}</td><td>{{ info.meals[1].strMeasure15 }}</td></tr><tr><td>{{ info.meals[1].strIngredient16 }}</td><td>{{ info.meals[1].strMeasure16 }}</td></tr><tr><td>{{ info.meals[1].strIngredient17 }}</td><td>{{ info.meals[1].strMeasure17 }}</td></tr><tr><td>{{ info.meals[1].strIngredient18 }}</td><td>{{ info.meals[1].strMeasure18 }}</td></tr><tr><td>{{ info.meals[1].strIngredient19 }}</td><td>{{ info.meals[0].strMeasure19 }}</td></tr><tr><td>{{ info.meals[1].strIngredient20 }}</td><td>{{ info.meals[1].strMeasure20 }}</td></tr></table>
+        <p class="instructions">{{info.meals[1].strInstructions}}</p>
+    </div>
+    <button class="collapsible" type="button">N</button>
+    <div id="mealsN">
+
+        <h2>{{ info.meals[0].strMeal }}</h2>
+        <img v-bind:src="info.meals[0].strMealThumb" alt="">
+        <table><tr><th>Ingredient</th><th>Measurement</th></tr><tr><td>{{ info.meals[0].strIngredient1 }}</td><td>{{ info.meals[0].strMeasure1 }}</td></tr><tr><td>{{ info.meals[0].strIngredient2 }}</td><td>{{ info.meals[0].strMeasure2 }}</td></tr><tr><td>{{ info.meals[0].strIngredient3 }}</td><td>{{ info.meals[0].strMeasure3 }}</td></tr><tr><td>{{ info.meals[0].strIngredient4 }}</td><td>{{ info.meals[0].strMeasure4 }}</td></tr><tr><td>{{ info.meals[0].strIngredient5 }}</td><td>{{ info.meals[0].strMeasure5 }}</td></tr><tr><td>{{ info.meals[0].strIngredient6 }}</td><td>{{ info.meals[0].strMeasure6 }}</td></tr><tr><td>{{ info.meals[0].strIngredient7 }}</td><td>{{ info.meals[0].strMeasure7 }}</td></tr><tr><td>{{ info.meals[0].strIngredient8 }}</td><td>{{ info.meals[0].strMeasure8 }}</td></tr><tr><td>{{ info.meals[0].strIngredient9 }}</td><td>{{ info.meals[0].strMeasure9 }}</td></tr><tr><td>{{ info.meals[0].strIngredient10 }}</td><td>{{ info.meals[0].strMeasure10 }}</td></tr><tr><td>{{ info.meals[0].strIngredient11 }}</td><td>{{ info.meals[0].strMeasure11 }}</td></tr><tr><td>{{ info.meals[0].strIngredient12 }}</td><td>{{ info.meals[0].strMeasure12 }}</td></tr><tr><td>{{ info.meals[0].strIngredient13 }}</td><td>{{ info.meals[0].strMeasure13 }}</td></tr><tr><td>{{ info.meals[0].strIngredient14 }}</td><td>{{ info.meals[0].strMeasure14 }}</td></tr><tr><td>{{ info.meals[0].strIngredient15 }}</td><td>{{ info.meals[0].strMeasure15 }}</td></tr><tr><td>{{ info.meals[0].strIngredient16 }}</td><td>{{ info.meals[0].strMeasure16 }}</td></tr><tr><td>{{ info.meals[0].strIngredient17 }}</td><td>{{ info.meals[0].strMeasure17 }}</td></tr><tr><td>{{ info.meals[0].strIngredient18 }}</td><td>{{ info.meals[0].strMeasure18 }}</td></tr><tr><td>{{ info.meals[0].strIngredient19 }}</td><td>{{ info.meals[0].strMeasure19 }}</td></tr><tr><td>{{ info.meals[0].strIngredient20 }}</td><td>{{ info.meals[0].strMeasure20 }}</td></tr></table>
+        <p class="instructions">{{info.meals[0].strInstructions}}</p>  
+
+        <h2>{{ info.meals[1].strMeal }}</h2>
+        <img v-bind:src="info.meals[1].strMealThumb" alt="">
+        <table><tr><th>Ingredient</th><th>Measurement</th></tr><tr><td>{{ info.meals[1].strIngredient1 }}</td><td>{{ info.meals[1].strMeasure1 }}</td></tr><tr><td>{{ info.meals[1].strIngredient2 }}</td><td>{{ info.meals[1].strMeasure2 }}</td></tr><tr><td>{{ info.meals[1].strIngredient3 }}</td><td>{{ info.meals[1].strMeasure3 }}</td></tr><tr><td>{{ info.meals[1].strIngredient4 }}</td><td>{{ info.meals[1].strMeasure4 }}</td></tr><tr><td>{{ info.meals[1].strIngredient5 }}</td><td>{{ info.meals[1].strMeasure5 }}</td></tr><tr><td>{{ info.meals[1].strIngredient6 }}</td><td>{{ info.meals[1].strMeasure6 }}</td></tr><tr><td>{{ info.meals[1].strIngredient7 }}</td><td>{{ info.meals[1].strMeasure7 }}</td></tr><tr><td>{{ info.meals[1].strIngredient8 }}</td><td>{{ info.meals[1].strMeasure8 }}</td></tr><tr><td>{{ info.meals[1].strIngredient9 }}</td><td>{{ info.meals[1].strMeasure9 }}</td></tr><tr><td>{{ info.meals[1].strIngredient10 }}</td><td>{{ info.meals[1].strMeasure10 }}</td></tr><tr><td>{{ info.meals[1].strIngredient11 }}</td><td>{{ info.meals[1].strMeasure11 }}</td></tr><tr><td>{{ info.meals[1].strIngredient12 }}</td><td>{{ info.meals[1].strMeasure12 }}</td></tr><tr><td>{{ info.meals[1].strIngredient13 }}</td><td>{{ info.meals[1].strMeasure13 }}</td></tr><tr><td>{{ info.meals[1].strIngredient14 }}</td><td>{{ info.meals[1].strMeasure14 }}</td></tr><tr><td>{{ info.meals[1].strIngredient15 }}</td><td>{{ info.meals[1].strMeasure15 }}</td></tr><tr><td>{{ info.meals[1].strIngredient16 }}</td><td>{{ info.meals[1].strMeasure16 }}</td></tr><tr><td>{{ info.meals[1].strIngredient17 }}</td><td>{{ info.meals[1].strMeasure17 }}</td></tr><tr><td>{{ info.meals[1].strIngredient18 }}</td><td>{{ info.meals[1].strMeasure18 }}</td></tr><tr><td>{{ info.meals[1].strIngredient19 }}</td><td>{{ info.meals[0].strMeasure19 }}</td></tr><tr><td>{{ info.meals[1].strIngredient20 }}</td><td>{{ info.meals[1].strMeasure20 }}</td></tr></table>
+        <p class="instructions">{{info.meals[1].strInstructions}}</p>
+    </div>
+    <button class="collapsible" type="button">O</button>
+    <div id="mealsO">
+
+        <h2>{{ info.meals[0].strMeal }}</h2>
+        <img v-bind:src="info.meals[0].strMealThumb" alt="">
+        <table><tr><th>Ingredient</th><th>Measurement</th></tr><tr><td>{{ info.meals[0].strIngredient1 }}</td><td>{{ info.meals[0].strMeasure1 }}</td></tr><tr><td>{{ info.meals[0].strIngredient2 }}</td><td>{{ info.meals[0].strMeasure2 }}</td></tr><tr><td>{{ info.meals[0].strIngredient3 }}</td><td>{{ info.meals[0].strMeasure3 }}</td></tr><tr><td>{{ info.meals[0].strIngredient4 }}</td><td>{{ info.meals[0].strMeasure4 }}</td></tr><tr><td>{{ info.meals[0].strIngredient5 }}</td><td>{{ info.meals[0].strMeasure5 }}</td></tr><tr><td>{{ info.meals[0].strIngredient6 }}</td><td>{{ info.meals[0].strMeasure6 }}</td></tr><tr><td>{{ info.meals[0].strIngredient7 }}</td><td>{{ info.meals[0].strMeasure7 }}</td></tr><tr><td>{{ info.meals[0].strIngredient8 }}</td><td>{{ info.meals[0].strMeasure8 }}</td></tr><tr><td>{{ info.meals[0].strIngredient9 }}</td><td>{{ info.meals[0].strMeasure9 }}</td></tr><tr><td>{{ info.meals[0].strIngredient10 }}</td><td>{{ info.meals[0].strMeasure10 }}</td></tr><tr><td>{{ info.meals[0].strIngredient11 }}</td><td>{{ info.meals[0].strMeasure11 }}</td></tr><tr><td>{{ info.meals[0].strIngredient12 }}</td><td>{{ info.meals[0].strMeasure12 }}</td></tr><tr><td>{{ info.meals[0].strIngredient13 }}</td><td>{{ info.meals[0].strMeasure13 }}</td></tr><tr><td>{{ info.meals[0].strIngredient14 }}</td><td>{{ info.meals[0].strMeasure14 }}</td></tr><tr><td>{{ info.meals[0].strIngredient15 }}</td><td>{{ info.meals[0].strMeasure15 }}</td></tr><tr><td>{{ info.meals[0].strIngredient16 }}</td><td>{{ info.meals[0].strMeasure16 }}</td></tr><tr><td>{{ info.meals[0].strIngredient17 }}</td><td>{{ info.meals[0].strMeasure17 }}</td></tr><tr><td>{{ info.meals[0].strIngredient18 }}</td><td>{{ info.meals[0].strMeasure18 }}</td></tr><tr><td>{{ info.meals[0].strIngredient19 }}</td><td>{{ info.meals[0].strMeasure19 }}</td></tr><tr><td>{{ info.meals[0].strIngredient20 }}</td><td>{{ info.meals[0].strMeasure20 }}</td></tr></table>
+        <p class="instructions">{{info.meals[0].strInstructions}}</p>  
+
+        <h2>{{ info.meals[1].strMeal }}</h2>
+        <img v-bind:src="info.meals[1].strMealThumb" alt="">
+        <table><tr><th>Ingredient</th><th>Measurement</th></tr><tr><td>{{ info.meals[1].strIngredient1 }}</td><td>{{ info.meals[1].strMeasure1 }}</td></tr><tr><td>{{ info.meals[1].strIngredient2 }}</td><td>{{ info.meals[1].strMeasure2 }}</td></tr><tr><td>{{ info.meals[1].strIngredient3 }}</td><td>{{ info.meals[1].strMeasure3 }}</td></tr><tr><td>{{ info.meals[1].strIngredient4 }}</td><td>{{ info.meals[1].strMeasure4 }}</td></tr><tr><td>{{ info.meals[1].strIngredient5 }}</td><td>{{ info.meals[1].strMeasure5 }}</td></tr><tr><td>{{ info.meals[1].strIngredient6 }}</td><td>{{ info.meals[1].strMeasure6 }}</td></tr><tr><td>{{ info.meals[1].strIngredient7 }}</td><td>{{ info.meals[1].strMeasure7 }}</td></tr><tr><td>{{ info.meals[1].strIngredient8 }}</td><td>{{ info.meals[1].strMeasure8 }}</td></tr><tr><td>{{ info.meals[1].strIngredient9 }}</td><td>{{ info.meals[1].strMeasure9 }}</td></tr><tr><td>{{ info.meals[1].strIngredient10 }}</td><td>{{ info.meals[1].strMeasure10 }}</td></tr><tr><td>{{ info.meals[1].strIngredient11 }}</td><td>{{ info.meals[1].strMeasure11 }}</td></tr><tr><td>{{ info.meals[1].strIngredient12 }}</td><td>{{ info.meals[1].strMeasure12 }}</td></tr><tr><td>{{ info.meals[1].strIngredient13 }}</td><td>{{ info.meals[1].strMeasure13 }}</td></tr><tr><td>{{ info.meals[1].strIngredient14 }}</td><td>{{ info.meals[1].strMeasure14 }}</td></tr><tr><td>{{ info.meals[1].strIngredient15 }}</td><td>{{ info.meals[1].strMeasure15 }}</td></tr><tr><td>{{ info.meals[1].strIngredient16 }}</td><td>{{ info.meals[1].strMeasure16 }}</td></tr><tr><td>{{ info.meals[1].strIngredient17 }}</td><td>{{ info.meals[1].strMeasure17 }}</td></tr><tr><td>{{ info.meals[1].strIngredient18 }}</td><td>{{ info.meals[1].strMeasure18 }}</td></tr><tr><td>{{ info.meals[1].strIngredient19 }}</td><td>{{ info.meals[0].strMeasure19 }}</td></tr><tr><td>{{ info.meals[1].strIngredient20 }}</td><td>{{ info.meals[1].strMeasure20 }}</td></tr></table>
+        <p class="instructions">{{info.meals[1].strInstructions}}</p>
+    </div>
+    <button class="collapsible" type="button">P</button>
+    <div id="mealsP">
+
+        <h2>{{ info.meals[0].strMeal }}</h2>
+        <img v-bind:src="info.meals[0].strMealThumb" alt="">
+        <table><tr><th>Ingredient</th><th>Measurement</th></tr><tr><td>{{ info.meals[0].strIngredient1 }}</td><td>{{ info.meals[0].strMeasure1 }}</td></tr><tr><td>{{ info.meals[0].strIngredient2 }}</td><td>{{ info.meals[0].strMeasure2 }}</td></tr><tr><td>{{ info.meals[0].strIngredient3 }}</td><td>{{ info.meals[0].strMeasure3 }}</td></tr><tr><td>{{ info.meals[0].strIngredient4 }}</td><td>{{ info.meals[0].strMeasure4 }}</td></tr><tr><td>{{ info.meals[0].strIngredient5 }}</td><td>{{ info.meals[0].strMeasure5 }}</td></tr><tr><td>{{ info.meals[0].strIngredient6 }}</td><td>{{ info.meals[0].strMeasure6 }}</td></tr><tr><td>{{ info.meals[0].strIngredient7 }}</td><td>{{ info.meals[0].strMeasure7 }}</td></tr><tr><td>{{ info.meals[0].strIngredient8 }}</td><td>{{ info.meals[0].strMeasure8 }}</td></tr><tr><td>{{ info.meals[0].strIngredient9 }}</td><td>{{ info.meals[0].strMeasure9 }}</td></tr><tr><td>{{ info.meals[0].strIngredient10 }}</td><td>{{ info.meals[0].strMeasure10 }}</td></tr><tr><td>{{ info.meals[0].strIngredient11 }}</td><td>{{ info.meals[0].strMeasure11 }}</td></tr><tr><td>{{ info.meals[0].strIngredient12 }}</td><td>{{ info.meals[0].strMeasure12 }}</td></tr><tr><td>{{ info.meals[0].strIngredient13 }}</td><td>{{ info.meals[0].strMeasure13 }}</td></tr><tr><td>{{ info.meals[0].strIngredient14 }}</td><td>{{ info.meals[0].strMeasure14 }}</td></tr><tr><td>{{ info.meals[0].strIngredient15 }}</td><td>{{ info.meals[0].strMeasure15 }}</td></tr><tr><td>{{ info.meals[0].strIngredient16 }}</td><td>{{ info.meals[0].strMeasure16 }}</td></tr><tr><td>{{ info.meals[0].strIngredient17 }}</td><td>{{ info.meals[0].strMeasure17 }}</td></tr><tr><td>{{ info.meals[0].strIngredient18 }}</td><td>{{ info.meals[0].strMeasure18 }}</td></tr><tr><td>{{ info.meals[0].strIngredient19 }}</td><td>{{ info.meals[0].strMeasure19 }}</td></tr><tr><td>{{ info.meals[0].strIngredient20 }}</td><td>{{ info.meals[0].strMeasure20 }}</td></tr></table>
+        <p class="instructions">{{info.meals[0].strInstructions}}</p>  
+
+        <h2>{{ info.meals[1].strMeal }}</h2>
+        <img v-bind:src="info.meals[1].strMealThumb" alt="">
+        <table><tr><th>Ingredient</th><th>Measurement</th></tr><tr><td>{{ info.meals[1].strIngredient1 }}</td><td>{{ info.meals[1].strMeasure1 }}</td></tr><tr><td>{{ info.meals[1].strIngredient2 }}</td><td>{{ info.meals[1].strMeasure2 }}</td></tr><tr><td>{{ info.meals[1].strIngredient3 }}</td><td>{{ info.meals[1].strMeasure3 }}</td></tr><tr><td>{{ info.meals[1].strIngredient4 }}</td><td>{{ info.meals[1].strMeasure4 }}</td></tr><tr><td>{{ info.meals[1].strIngredient5 }}</td><td>{{ info.meals[1].strMeasure5 }}</td></tr><tr><td>{{ info.meals[1].strIngredient6 }}</td><td>{{ info.meals[1].strMeasure6 }}</td></tr><tr><td>{{ info.meals[1].strIngredient7 }}</td><td>{{ info.meals[1].strMeasure7 }}</td></tr><tr><td>{{ info.meals[1].strIngredient8 }}</td><td>{{ info.meals[1].strMeasure8 }}</td></tr><tr><td>{{ info.meals[1].strIngredient9 }}</td><td>{{ info.meals[1].strMeasure9 }}</td></tr><tr><td>{{ info.meals[1].strIngredient10 }}</td><td>{{ info.meals[1].strMeasure10 }}</td></tr><tr><td>{{ info.meals[1].strIngredient11 }}</td><td>{{ info.meals[1].strMeasure11 }}</td></tr><tr><td>{{ info.meals[1].strIngredient12 }}</td><td>{{ info.meals[1].strMeasure12 }}</td></tr><tr><td>{{ info.meals[1].strIngredient13 }}</td><td>{{ info.meals[1].strMeasure13 }}</td></tr><tr><td>{{ info.meals[1].strIngredient14 }}</td><td>{{ info.meals[1].strMeasure14 }}</td></tr><tr><td>{{ info.meals[1].strIngredient15 }}</td><td>{{ info.meals[1].strMeasure15 }}</td></tr><tr><td>{{ info.meals[1].strIngredient16 }}</td><td>{{ info.meals[1].strMeasure16 }}</td></tr><tr><td>{{ info.meals[1].strIngredient17 }}</td><td>{{ info.meals[1].strMeasure17 }}</td></tr><tr><td>{{ info.meals[1].strIngredient18 }}</td><td>{{ info.meals[1].strMeasure18 }}</td></tr><tr><td>{{ info.meals[1].strIngredient19 }}</td><td>{{ info.meals[0].strMeasure19 }}</td></tr><tr><td>{{ info.meals[1].strIngredient20 }}</td><td>{{ info.meals[1].strMeasure20 }}</td></tr></table>
+        <p class="instructions">{{info.meals[1].strInstructions}}</p>
+    </div>
+    <button class="collapsible" type="button">Q</button>
+    <div id="mealsQ">
+        <h2>There are no meals that start with "Q"</h2>
+        <img src="shrug.png" alt=""class="shrug">
+    </div>
+    <button class="collapsible" type="button">R</button>
+    <div id="mealsR">
+
+        <h2>{{ info.meals[0].strMeal }}</h2>
+        <img v-bind:src="info.meals[0].strMealThumb" alt="">
+        <table><tr><th>Ingredient</th><th>Measurement</th></tr><tr><td>{{ info.meals[0].strIngredient1 }}</td><td>{{ info.meals[0].strMeasure1 }}</td></tr><tr><td>{{ info.meals[0].strIngredient2 }}</td><td>{{ info.meals[0].strMeasure2 }}</td></tr><tr><td>{{ info.meals[0].strIngredient3 }}</td><td>{{ info.meals[0].strMeasure3 }}</td></tr><tr><td>{{ info.meals[0].strIngredient4 }}</td><td>{{ info.meals[0].strMeasure4 }}</td></tr><tr><td>{{ info.meals[0].strIngredient5 }}</td><td>{{ info.meals[0].strMeasure5 }}</td></tr><tr><td>{{ info.meals[0].strIngredient6 }}</td><td>{{ info.meals[0].strMeasure6 }}</td></tr><tr><td>{{ info.meals[0].strIngredient7 }}</td><td>{{ info.meals[0].strMeasure7 }}</td></tr><tr><td>{{ info.meals[0].strIngredient8 }}</td><td>{{ info.meals[0].strMeasure8 }}</td></tr><tr><td>{{ info.meals[0].strIngredient9 }}</td><td>{{ info.meals[0].strMeasure9 }}</td></tr><tr><td>{{ info.meals[0].strIngredient10 }}</td><td>{{ info.meals[0].strMeasure10 }}</td></tr><tr><td>{{ info.meals[0].strIngredient11 }}</td><td>{{ info.meals[0].strMeasure11 }}</td></tr><tr><td>{{ info.meals[0].strIngredient12 }}</td><td>{{ info.meals[0].strMeasure12 }}</td></tr><tr><td>{{ info.meals[0].strIngredient13 }}</td><td>{{ info.meals[0].strMeasure13 }}</td></tr><tr><td>{{ info.meals[0].strIngredient14 }}</td><td>{{ info.meals[0].strMeasure14 }}</td></tr><tr><td>{{ info.meals[0].strIngredient15 }}</td><td>{{ info.meals[0].strMeasure15 }}</td></tr><tr><td>{{ info.meals[0].strIngredient16 }}</td><td>{{ info.meals[0].strMeasure16 }}</td></tr><tr><td>{{ info.meals[0].strIngredient17 }}</td><td>{{ info.meals[0].strMeasure17 }}</td></tr><tr><td>{{ info.meals[0].strIngredient18 }}</td><td>{{ info.meals[0].strMeasure18 }}</td></tr><tr><td>{{ info.meals[0].strIngredient19 }}</td><td>{{ info.meals[0].strMeasure19 }}</td></tr><tr><td>{{ info.meals[0].strIngredient20 }}</td><td>{{ info.meals[0].strMeasure20 }}</td></tr></table>
+        <p class="instructions">{{info.meals[0].strInstructions}}</p>  
+
+        <h2>{{ info.meals[1].strMeal }}</h2>
+        <img v-bind:src="info.meals[1].strMealThumb" alt="">
+        <table><tr><th>Ingredient</th><th>Measurement</th></tr><tr><td>{{ info.meals[1].strIngredient1 }}</td><td>{{ info.meals[1].strMeasure1 }}</td></tr><tr><td>{{ info.meals[1].strIngredient2 }}</td><td>{{ info.meals[1].strMeasure2 }}</td></tr><tr><td>{{ info.meals[1].strIngredient3 }}</td><td>{{ info.meals[1].strMeasure3 }}</td></tr><tr><td>{{ info.meals[1].strIngredient4 }}</td><td>{{ info.meals[1].strMeasure4 }}</td></tr><tr><td>{{ info.meals[1].strIngredient5 }}</td><td>{{ info.meals[1].strMeasure5 }}</td></tr><tr><td>{{ info.meals[1].strIngredient6 }}</td><td>{{ info.meals[1].strMeasure6 }}</td></tr><tr><td>{{ info.meals[1].strIngredient7 }}</td><td>{{ info.meals[1].strMeasure7 }}</td></tr><tr><td>{{ info.meals[1].strIngredient8 }}</td><td>{{ info.meals[1].strMeasure8 }}</td></tr><tr><td>{{ info.meals[1].strIngredient9 }}</td><td>{{ info.meals[1].strMeasure9 }}</td></tr><tr><td>{{ info.meals[1].strIngredient10 }}</td><td>{{ info.meals[1].strMeasure10 }}</td></tr><tr><td>{{ info.meals[1].strIngredient11 }}</td><td>{{ info.meals[1].strMeasure11 }}</td></tr><tr><td>{{ info.meals[1].strIngredient12 }}</td><td>{{ info.meals[1].strMeasure12 }}</td></tr><tr><td>{{ info.meals[1].strIngredient13 }}</td><td>{{ info.meals[1].strMeasure13 }}</td></tr><tr><td>{{ info.meals[1].strIngredient14 }}</td><td>{{ info.meals[1].strMeasure14 }}</td></tr><tr><td>{{ info.meals[1].strIngredient15 }}</td><td>{{ info.meals[1].strMeasure15 }}</td></tr><tr><td>{{ info.meals[1].strIngredient16 }}</td><td>{{ info.meals[1].strMeasure16 }}</td></tr><tr><td>{{ info.meals[1].strIngredient17 }}</td><td>{{ info.meals[1].strMeasure17 }}</td></tr><tr><td>{{ info.meals[1].strIngredient18 }}</td><td>{{ info.meals[1].strMeasure18 }}</td></tr><tr><td>{{ info.meals[1].strIngredient19 }}</td><td>{{ info.meals[0].strMeasure19 }}</td></tr><tr><td>{{ info.meals[1].strIngredient20 }}</td><td>{{ info.meals[1].strMeasure20 }}</td></tr></table>
+        <p class="instructions">{{info.meals[1].strInstructions}}</p>
+    </div>
+    <button class="collapsible" type="button">S</button>
+    <div id="mealsS">
+
+        <h2>{{ info.meals[0].strMeal }}</h2>
+        <img v-bind:src="info.meals[0].strMealThumb" alt="">
+        <table><tr><th>Ingredient</th><th>Measurement</th></tr><tr><td>{{ info.meals[0].strIngredient1 }}</td><td>{{ info.meals[0].strMeasure1 }}</td></tr><tr><td>{{ info.meals[0].strIngredient2 }}</td><td>{{ info.meals[0].strMeasure2 }}</td></tr><tr><td>{{ info.meals[0].strIngredient3 }}</td><td>{{ info.meals[0].strMeasure3 }}</td></tr><tr><td>{{ info.meals[0].strIngredient4 }}</td><td>{{ info.meals[0].strMeasure4 }}</td></tr><tr><td>{{ info.meals[0].strIngredient5 }}</td><td>{{ info.meals[0].strMeasure5 }}</td></tr><tr><td>{{ info.meals[0].strIngredient6 }}</td><td>{{ info.meals[0].strMeasure6 }}</td></tr><tr><td>{{ info.meals[0].strIngredient7 }}</td><td>{{ info.meals[0].strMeasure7 }}</td></tr><tr><td>{{ info.meals[0].strIngredient8 }}</td><td>{{ info.meals[0].strMeasure8 }}</td></tr><tr><td>{{ info.meals[0].strIngredient9 }}</td><td>{{ info.meals[0].strMeasure9 }}</td></tr><tr><td>{{ info.meals[0].strIngredient10 }}</td><td>{{ info.meals[0].strMeasure10 }}</td></tr><tr><td>{{ info.meals[0].strIngredient11 }}</td><td>{{ info.meals[0].strMeasure11 }}</td></tr><tr><td>{{ info.meals[0].strIngredient12 }}</td><td>{{ info.meals[0].strMeasure12 }}</td></tr><tr><td>{{ info.meals[0].strIngredient13 }}</td><td>{{ info.meals[0].strMeasure13 }}</td></tr><tr><td>{{ info.meals[0].strIngredient14 }}</td><td>{{ info.meals[0].strMeasure14 }}</td></tr><tr><td>{{ info.meals[0].strIngredient15 }}</td><td>{{ info.meals[0].strMeasure15 }}</td></tr><tr><td>{{ info.meals[0].strIngredient16 }}</td><td>{{ info.meals[0].strMeasure16 }}</td></tr><tr><td>{{ info.meals[0].strIngredient17 }}</td><td>{{ info.meals[0].strMeasure17 }}</td></tr><tr><td>{{ info.meals[0].strIngredient18 }}</td><td>{{ info.meals[0].strMeasure18 }}</td></tr><tr><td>{{ info.meals[0].strIngredient19 }}</td><td>{{ info.meals[0].strMeasure19 }}</td></tr><tr><td>{{ info.meals[0].strIngredient20 }}</td><td>{{ info.meals[0].strMeasure20 }}</td></tr></table>
+        <p class="instructions">{{info.meals[0].strInstructions}}</p>  
+
+        <h2>{{ info.meals[1].strMeal }}</h2>
+        <img v-bind:src="info.meals[1].strMealThumb" alt="">
+        <table><tr><th>Ingredient</th><th>Measurement</th></tr><tr><td>{{ info.meals[1].strIngredient1 }}</td><td>{{ info.meals[1].strMeasure1 }}</td></tr><tr><td>{{ info.meals[1].strIngredient2 }}</td><td>{{ info.meals[1].strMeasure2 }}</td></tr><tr><td>{{ info.meals[1].strIngredient3 }}</td><td>{{ info.meals[1].strMeasure3 }}</td></tr><tr><td>{{ info.meals[1].strIngredient4 }}</td><td>{{ info.meals[1].strMeasure4 }}</td></tr><tr><td>{{ info.meals[1].strIngredient5 }}</td><td>{{ info.meals[1].strMeasure5 }}</td></tr><tr><td>{{ info.meals[1].strIngredient6 }}</td><td>{{ info.meals[1].strMeasure6 }}</td></tr><tr><td>{{ info.meals[1].strIngredient7 }}</td><td>{{ info.meals[1].strMeasure7 }}</td></tr><tr><td>{{ info.meals[1].strIngredient8 }}</td><td>{{ info.meals[1].strMeasure8 }}</td></tr><tr><td>{{ info.meals[1].strIngredient9 }}</td><td>{{ info.meals[1].strMeasure9 }}</td></tr><tr><td>{{ info.meals[1].strIngredient10 }}</td><td>{{ info.meals[1].strMeasure10 }}</td></tr><tr><td>{{ info.meals[1].strIngredient11 }}</td><td>{{ info.meals[1].strMeasure11 }}</td></tr><tr><td>{{ info.meals[1].strIngredient12 }}</td><td>{{ info.meals[1].strMeasure12 }}</td></tr><tr><td>{{ info.meals[1].strIngredient13 }}</td><td>{{ info.meals[1].strMeasure13 }}</td></tr><tr><td>{{ info.meals[1].strIngredient14 }}</td><td>{{ info.meals[1].strMeasure14 }}</td></tr><tr><td>{{ info.meals[1].strIngredient15 }}</td><td>{{ info.meals[1].strMeasure15 }}</td></tr><tr><td>{{ info.meals[1].strIngredient16 }}</td><td>{{ info.meals[1].strMeasure16 }}</td></tr><tr><td>{{ info.meals[1].strIngredient17 }}</td><td>{{ info.meals[1].strMeasure17 }}</td></tr><tr><td>{{ info.meals[1].strIngredient18 }}</td><td>{{ info.meals[1].strMeasure18 }}</td></tr><tr><td>{{ info.meals[1].strIngredient19 }}</td><td>{{ info.meals[0].strMeasure19 }}</td></tr><tr><td>{{ info.meals[1].strIngredient20 }}</td><td>{{ info.meals[1].strMeasure20 }}</td></tr></table>
+        <p class="instructions">{{info.meals[1].strInstructions}}</p>
+    </div>
+    <button class="collapsible" type="button">T</button>
+    <div id="mealsT">
+
+        <h2>{{ info.meals[0].strMeal }}</h2>
+        <img v-bind:src="info.meals[0].strMealThumb" alt="">
+        <table><tr><th>Ingredient</th><th>Measurement</th></tr><tr><td>{{ info.meals[0].strIngredient1 }}</td><td>{{ info.meals[0].strMeasure1 }}</td></tr><tr><td>{{ info.meals[0].strIngredient2 }}</td><td>{{ info.meals[0].strMeasure2 }}</td></tr><tr><td>{{ info.meals[0].strIngredient3 }}</td><td>{{ info.meals[0].strMeasure3 }}</td></tr><tr><td>{{ info.meals[0].strIngredient4 }}</td><td>{{ info.meals[0].strMeasure4 }}</td></tr><tr><td>{{ info.meals[0].strIngredient5 }}</td><td>{{ info.meals[0].strMeasure5 }}</td></tr><tr><td>{{ info.meals[0].strIngredient6 }}</td><td>{{ info.meals[0].strMeasure6 }}</td></tr><tr><td>{{ info.meals[0].strIngredient7 }}</td><td>{{ info.meals[0].strMeasure7 }}</td></tr><tr><td>{{ info.meals[0].strIngredient8 }}</td><td>{{ info.meals[0].strMeasure8 }}</td></tr><tr><td>{{ info.meals[0].strIngredient9 }}</td><td>{{ info.meals[0].strMeasure9 }}</td></tr><tr><td>{{ info.meals[0].strIngredient10 }}</td><td>{{ info.meals[0].strMeasure10 }}</td></tr><tr><td>{{ info.meals[0].strIngredient11 }}</td><td>{{ info.meals[0].strMeasure11 }}</td></tr><tr><td>{{ info.meals[0].strIngredient12 }}</td><td>{{ info.meals[0].strMeasure12 }}</td></tr><tr><td>{{ info.meals[0].strIngredient13 }}</td><td>{{ info.meals[0].strMeasure13 }}</td></tr><tr><td>{{ info.meals[0].strIngredient14 }}</td><td>{{ info.meals[0].strMeasure14 }}</td></tr><tr><td>{{ info.meals[0].strIngredient15 }}</td><td>{{ info.meals[0].strMeasure15 }}</td></tr><tr><td>{{ info.meals[0].strIngredient16 }}</td><td>{{ info.meals[0].strMeasure16 }}</td></tr><tr><td>{{ info.meals[0].strIngredient17 }}</td><td>{{ info.meals[0].strMeasure17 }}</td></tr><tr><td>{{ info.meals[0].strIngredient18 }}</td><td>{{ info.meals[0].strMeasure18 }}</td></tr><tr><td>{{ info.meals[0].strIngredient19 }}</td><td>{{ info.meals[0].strMeasure19 }}</td></tr><tr><td>{{ info.meals[0].strIngredient20 }}</td><td>{{ info.meals[0].strMeasure20 }}</td></tr></table>
+        <p class="instructions">{{info.meals[0].strInstructions}}</p>  
+
+        <h2>{{ info.meals[1].strMeal }}</h2>
+        <img v-bind:src="info.meals[1].strMealThumb" alt="">
+        <table><tr><th>Ingredient</th><th>Measurement</th></tr><tr><td>{{ info.meals[1].strIngredient1 }}</td><td>{{ info.meals[1].strMeasure1 }}</td></tr><tr><td>{{ info.meals[1].strIngredient2 }}</td><td>{{ info.meals[1].strMeasure2 }}</td></tr><tr><td>{{ info.meals[1].strIngredient3 }}</td><td>{{ info.meals[1].strMeasure3 }}</td></tr><tr><td>{{ info.meals[1].strIngredient4 }}</td><td>{{ info.meals[1].strMeasure4 }}</td></tr><tr><td>{{ info.meals[1].strIngredient5 }}</td><td>{{ info.meals[1].strMeasure5 }}</td></tr><tr><td>{{ info.meals[1].strIngredient6 }}</td><td>{{ info.meals[1].strMeasure6 }}</td></tr><tr><td>{{ info.meals[1].strIngredient7 }}</td><td>{{ info.meals[1].strMeasure7 }}</td></tr><tr><td>{{ info.meals[1].strIngredient8 }}</td><td>{{ info.meals[1].strMeasure8 }}</td></tr><tr><td>{{ info.meals[1].strIngredient9 }}</td><td>{{ info.meals[1].strMeasure9 }}</td></tr><tr><td>{{ info.meals[1].strIngredient10 }}</td><td>{{ info.meals[1].strMeasure10 }}</td></tr><tr><td>{{ info.meals[1].strIngredient11 }}</td><td>{{ info.meals[1].strMeasure11 }}</td></tr><tr><td>{{ info.meals[1].strIngredient12 }}</td><td>{{ info.meals[1].strMeasure12 }}</td></tr><tr><td>{{ info.meals[1].strIngredient13 }}</td><td>{{ info.meals[1].strMeasure13 }}</td></tr><tr><td>{{ info.meals[1].strIngredient14 }}</td><td>{{ info.meals[1].strMeasure14 }}</td></tr><tr><td>{{ info.meals[1].strIngredient15 }}</td><td>{{ info.meals[1].strMeasure15 }}</td></tr><tr><td>{{ info.meals[1].strIngredient16 }}</td><td>{{ info.meals[1].strMeasure16 }}</td></tr><tr><td>{{ info.meals[1].strIngredient17 }}</td><td>{{ info.meals[1].strMeasure17 }}</td></tr><tr><td>{{ info.meals[1].strIngredient18 }}</td><td>{{ info.meals[1].strMeasure18 }}</td></tr><tr><td>{{ info.meals[1].strIngredient19 }}</td><td>{{ info.meals[0].strMeasure19 }}</td></tr><tr><td>{{ info.meals[1].strIngredient20 }}</td><td>{{ info.meals[1].strMeasure20 }}</td></tr></table>
+        <p class="instructions">{{info.meals[1].strInstructions}}</p>
+    </div>
+    <button class="collapsible" type="button">U</button>
+    <div id="mealsU">
+
+        <h2>There are no meals that start with "U"</h2>
+        <img src="shrug.png" alt="" class="shrug">
+ 
+    </div>
+    <button class="collapsible" type="button">V</button>
+    <div id="mealsV">
+
+        <h2>{{ info.meals[0].strMeal }}</h2>
+        <img v-bind:src="info.meals[0].strMealThumb" alt="">
+        <table><tr><th>Ingredient</th><th>Measurement</th></tr><tr><td>{{ info.meals[0].strIngredient1 }}</td><td>{{ info.meals[0].strMeasure1 }}</td></tr><tr><td>{{ info.meals[0].strIngredient2 }}</td><td>{{ info.meals[0].strMeasure2 }}</td></tr><tr><td>{{ info.meals[0].strIngredient3 }}</td><td>{{ info.meals[0].strMeasure3 }}</td></tr><tr><td>{{ info.meals[0].strIngredient4 }}</td><td>{{ info.meals[0].strMeasure4 }}</td></tr><tr><td>{{ info.meals[0].strIngredient5 }}</td><td>{{ info.meals[0].strMeasure5 }}</td></tr><tr><td>{{ info.meals[0].strIngredient6 }}</td><td>{{ info.meals[0].strMeasure6 }}</td></tr><tr><td>{{ info.meals[0].strIngredient7 }}</td><td>{{ info.meals[0].strMeasure7 }}</td></tr><tr><td>{{ info.meals[0].strIngredient8 }}</td><td>{{ info.meals[0].strMeasure8 }}</td></tr><tr><td>{{ info.meals[0].strIngredient9 }}</td><td>{{ info.meals[0].strMeasure9 }}</td></tr><tr><td>{{ info.meals[0].strIngredient10 }}</td><td>{{ info.meals[0].strMeasure10 }}</td></tr><tr><td>{{ info.meals[0].strIngredient11 }}</td><td>{{ info.meals[0].strMeasure11 }}</td></tr><tr><td>{{ info.meals[0].strIngredient12 }}</td><td>{{ info.meals[0].strMeasure12 }}</td></tr><tr><td>{{ info.meals[0].strIngredient13 }}</td><td>{{ info.meals[0].strMeasure13 }}</td></tr><tr><td>{{ info.meals[0].strIngredient14 }}</td><td>{{ info.meals[0].strMeasure14 }}</td></tr><tr><td>{{ info.meals[0].strIngredient15 }}</td><td>{{ info.meals[0].strMeasure15 }}</td></tr><tr><td>{{ info.meals[0].strIngredient16 }}</td><td>{{ info.meals[0].strMeasure16 }}</td></tr><tr><td>{{ info.meals[0].strIngredient17 }}</td><td>{{ info.meals[0].strMeasure17 }}</td></tr><tr><td>{{ info.meals[0].strIngredient18 }}</td><td>{{ info.meals[0].strMeasure18 }}</td></tr><tr><td>{{ info.meals[0].strIngredient19 }}</td><td>{{ info.meals[0].strMeasure19 }}</td></tr><tr><td>{{ info.meals[0].strIngredient20 }}</td><td>{{ info.meals[0].strMeasure20 }}</td></tr></table>
+        <p class="instructions">{{info.meals[0].strInstructions}}</p>  
+
+        <h2>{{ info.meals[1].strMeal }}</h2>
+        <img v-bind:src="info.meals[1].strMealThumb" alt="">
+        <table><tr><th>Ingredient</th><th>Measurement</th></tr><tr><td>{{ info.meals[1].strIngredient1 }}</td><td>{{ info.meals[1].strMeasure1 }}</td></tr><tr><td>{{ info.meals[1].strIngredient2 }}</td><td>{{ info.meals[1].strMeasure2 }}</td></tr><tr><td>{{ info.meals[1].strIngredient3 }}</td><td>{{ info.meals[1].strMeasure3 }}</td></tr><tr><td>{{ info.meals[1].strIngredient4 }}</td><td>{{ info.meals[1].strMeasure4 }}</td></tr><tr><td>{{ info.meals[1].strIngredient5 }}</td><td>{{ info.meals[1].strMeasure5 }}</td></tr><tr><td>{{ info.meals[1].strIngredient6 }}</td><td>{{ info.meals[1].strMeasure6 }}</td></tr><tr><td>{{ info.meals[1].strIngredient7 }}</td><td>{{ info.meals[1].strMeasure7 }}</td></tr><tr><td>{{ info.meals[1].strIngredient8 }}</td><td>{{ info.meals[1].strMeasure8 }}</td></tr><tr><td>{{ info.meals[1].strIngredient9 }}</td><td>{{ info.meals[1].strMeasure9 }}</td></tr><tr><td>{{ info.meals[1].strIngredient10 }}</td><td>{{ info.meals[1].strMeasure10 }}</td></tr><tr><td>{{ info.meals[1].strIngredient11 }}</td><td>{{ info.meals[1].strMeasure11 }}</td></tr><tr><td>{{ info.meals[1].strIngredient12 }}</td><td>{{ info.meals[1].strMeasure12 }}</td></tr><tr><td>{{ info.meals[1].strIngredient13 }}</td><td>{{ info.meals[1].strMeasure13 }}</td></tr><tr><td>{{ info.meals[1].strIngredient14 }}</td><td>{{ info.meals[1].strMeasure14 }}</td></tr><tr><td>{{ info.meals[1].strIngredient15 }}</td><td>{{ info.meals[1].strMeasure15 }}</td></tr><tr><td>{{ info.meals[1].strIngredient16 }}</td><td>{{ info.meals[1].strMeasure16 }}</td></tr><tr><td>{{ info.meals[1].strIngredient17 }}</td><td>{{ info.meals[1].strMeasure17 }}</td></tr><tr><td>{{ info.meals[1].strIngredient18 }}</td><td>{{ info.meals[1].strMeasure18 }}</td></tr><tr><td>{{ info.meals[1].strIngredient19 }}</td><td>{{ info.meals[0].strMeasure19 }}</td></tr><tr><td>{{ info.meals[1].strIngredient20 }}</td><td>{{ info.meals[1].strMeasure20 }}</td></tr></table>
+        <p class="instructions">{{info.meals[1].strInstructions}}</p>
+    </div>
+    <button class="collapsible" type="button">W</button>
+    <div id="mealsW">
+
+        <h2>{{ info.meals[0].strMeal }}</h2>
+        <img v-bind:src="info.meals[0].strMealThumb" alt="">
+        <table><tr><th>Ingredient</th><th>Measurement</th></tr><tr><td>{{ info.meals[0].strIngredient1 }}</td><td>{{ info.meals[0].strMeasure1 }}</td></tr><tr><td>{{ info.meals[0].strIngredient2 }}</td><td>{{ info.meals[0].strMeasure2 }}</td></tr><tr><td>{{ info.meals[0].strIngredient3 }}</td><td>{{ info.meals[0].strMeasure3 }}</td></tr><tr><td>{{ info.meals[0].strIngredient4 }}</td><td>{{ info.meals[0].strMeasure4 }}</td></tr><tr><td>{{ info.meals[0].strIngredient5 }}</td><td>{{ info.meals[0].strMeasure5 }}</td></tr><tr><td>{{ info.meals[0].strIngredient6 }}</td><td>{{ info.meals[0].strMeasure6 }}</td></tr><tr><td>{{ info.meals[0].strIngredient7 }}</td><td>{{ info.meals[0].strMeasure7 }}</td></tr><tr><td>{{ info.meals[0].strIngredient8 }}</td><td>{{ info.meals[0].strMeasure8 }}</td></tr><tr><td>{{ info.meals[0].strIngredient9 }}</td><td>{{ info.meals[0].strMeasure9 }}</td></tr><tr><td>{{ info.meals[0].strIngredient10 }}</td><td>{{ info.meals[0].strMeasure10 }}</td></tr><tr><td>{{ info.meals[0].strIngredient11 }}</td><td>{{ info.meals[0].strMeasure11 }}</td></tr><tr><td>{{ info.meals[0].strIngredient12 }}</td><td>{{ info.meals[0].strMeasure12 }}</td></tr><tr><td>{{ info.meals[0].strIngredient13 }}</td><td>{{ info.meals[0].strMeasure13 }}</td></tr><tr><td>{{ info.meals[0].strIngredient14 }}</td><td>{{ info.meals[0].strMeasure14 }}</td></tr><tr><td>{{ info.meals[0].strIngredient15 }}</td><td>{{ info.meals[0].strMeasure15 }}</td></tr><tr><td>{{ info.meals[0].strIngredient16 }}</td><td>{{ info.meals[0].strMeasure16 }}</td></tr><tr><td>{{ info.meals[0].strIngredient17 }}</td><td>{{ info.meals[0].strMeasure17 }}</td></tr><tr><td>{{ info.meals[0].strIngredient18 }}</td><td>{{ info.meals[0].strMeasure18 }}</td></tr><tr><td>{{ info.meals[0].strIngredient19 }}</td><td>{{ info.meals[0].strMeasure19 }}</td></tr><tr><td>{{ info.meals[0].strIngredient20 }}</td><td>{{ info.meals[0].strMeasure20 }}</td></tr></table>
+        <p class="instructions">{{info.meals[0].strInstructions}}</p>  
+
+        <h2>{{ info.meals[1].strMeal }}</h2>
+        <img v-bind:src="info.meals[1].strMealThumb" alt="">
+        <table><tr><th>Ingredient</th><th>Measurement</th></tr><tr><td>{{ info.meals[1].strIngredient1 }}</td><td>{{ info.meals[1].strMeasure1 }}</td></tr><tr><td>{{ info.meals[1].strIngredient2 }}</td><td>{{ info.meals[1].strMeasure2 }}</td></tr><tr><td>{{ info.meals[1].strIngredient3 }}</td><td>{{ info.meals[1].strMeasure3 }}</td></tr><tr><td>{{ info.meals[1].strIngredient4 }}</td><td>{{ info.meals[1].strMeasure4 }}</td></tr><tr><td>{{ info.meals[1].strIngredient5 }}</td><td>{{ info.meals[1].strMeasure5 }}</td></tr><tr><td>{{ info.meals[1].strIngredient6 }}</td><td>{{ info.meals[1].strMeasure6 }}</td></tr><tr><td>{{ info.meals[1].strIngredient7 }}</td><td>{{ info.meals[1].strMeasure7 }}</td></tr><tr><td>{{ info.meals[1].strIngredient8 }}</td><td>{{ info.meals[1].strMeasure8 }}</td></tr><tr><td>{{ info.meals[1].strIngredient9 }}</td><td>{{ info.meals[1].strMeasure9 }}</td></tr><tr><td>{{ info.meals[1].strIngredient10 }}</td><td>{{ info.meals[1].strMeasure10 }}</td></tr><tr><td>{{ info.meals[1].strIngredient11 }}</td><td>{{ info.meals[1].strMeasure11 }}</td></tr><tr><td>{{ info.meals[1].strIngredient12 }}</td><td>{{ info.meals[1].strMeasure12 }}</td></tr><tr><td>{{ info.meals[1].strIngredient13 }}</td><td>{{ info.meals[1].strMeasure13 }}</td></tr><tr><td>{{ info.meals[1].strIngredient14 }}</td><td>{{ info.meals[1].strMeasure14 }}</td></tr><tr><td>{{ info.meals[1].strIngredient15 }}</td><td>{{ info.meals[1].strMeasure15 }}</td></tr><tr><td>{{ info.meals[1].strIngredient16 }}</td><td>{{ info.meals[1].strMeasure16 }}</td></tr><tr><td>{{ info.meals[1].strIngredient17 }}</td><td>{{ info.meals[1].strMeasure17 }}</td></tr><tr><td>{{ info.meals[1].strIngredient18 }}</td><td>{{ info.meals[1].strMeasure18 }}</td></tr><tr><td>{{ info.meals[1].strIngredient19 }}</td><td>{{ info.meals[0].strMeasure19 }}</td></tr><tr><td>{{ info.meals[1].strIngredient20 }}</td><td>{{ info.meals[1].strMeasure20 }}</td></tr></table>
+        <p class="instructions">{{info.meals[1].strInstructions}}</p>
+    </div>
+    <button class="collapsible" type="button">X</button>
+    <div id="mealsX">
+        <h2>There are no meals that start with "X"</h2>
+        <img src="shrug.png" alt="" class="shrug">
+    </div>
+    <button class="collapsible" type="button">Y</button>
+    <div id="mealsY">
+        <h2>There are no meals that start with "Y"</h2>
+        <img src="shrug.png" alt="" class="shrug">
+
+    </div>
+
+    <button class="collapsible" type="button">Z</button>
+    <div id="mealsZ">
+        <h2>There are no meals that start with "Z"</h2>
+        <img src="shrug.png" alt="" class="shrug">
+
+    </div>
 
 </div>
 
